@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>SunRisers Hyderbad</title>
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: white;
+            }
+            *{
+                margin: 0PX;
+            }
+            .nav{
+                width: 100%;
+                height: 12vh;
+                background-color: whitesmoke;
+                display: flex;
+                position: fixed;
+               
+            }
+            .nav i{
+                margin-left: 50px;
+                margin-top: 4vh;
+                font-size: 25px;
+                color: RGB(238, 116, 41) ;
+            }
+            .img-responsive{
+                margin-left: 40px;
+                margin-top: 0vh;
+                width: 140px;
+            }
+            .banner{
+                width: 100%;
+                height: 80vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image:url("https://www.sunrisershyderabad.in/uploads/image/SRH-6305d013c82782.17260304$5u8jnaf.jpg");
+            }
+            .row{
+                display: flex;  
+                margin-top: 8vh;
+                margin-left: 70px;
+                height: 21.6vh;
+               
+            }
+            .row .x{
+                width: 33%;
+                
+            }
+            .x img{
+                width: 90%;
+            }
+            .chain-head{
+                display: flex;
+                width: 100%;
+                height: 20vh;
+                
+                
+            }
+            .chain-1{
+                width: 50%;
+               
+                height: 20vh;
+            }
+            .chain-2{
+                width: 50%;
+              
+                height: 20vh;
+                
+            }
+            
+
+            .chain-1 img{
+                width:  6%;
+                margin-left: 38%;
+                height: 100%;
+               
+            }
+            .chain-2 img{
+                width:  6.4%;
+                margin-left: 60%;
+                height: 100%;   
+            }          
+            hr{
+                width: 99%;
+                
+                border: 2px solid white;
+                
+            }
+            .points-table{
+                width: 96%;
+                margin-left: 2.5%;
+                height: 88vh;
+                background-color:#f5cf7d;
+                margin-top: 0vh;
+            }
+            table{
+           border-collapse: collapse;
+           border: none;
+            }
+            .p-head tH{
+                width: 150px;
+               font-weight: bold;      
+               font-size: 30PX;      
+                
+               border-bottom-color: white;
+            
+              text-align: center;
+            padding-top: 5vh;
+               
+            }
+            TR{
+                height: 6VH;
+                text-align: center;
+                
+            }
+            .line{
+                margin-top: 1.5vh;
+            }
+            .icon img{
+                border-radius: 50%;
+            }
+            .icon{
+           display: flex;
+                
+            }
+            .gt{
+                margin-top: 2.5vh;
+            }
+            .imgicon{
+                padding-left: 30px;
+                padding-top: 1vh;
+            }
+            .rr{
+                margin-top: 2.5vh;
+                padding-left: 8px;
+            }
+            .LSG{
+                  margin-top: 1.5vh;
+                padding-left: 0px;
+            }
+            .RCB{
+                margin-top: 2.5vh;
+                padding-left: 5px;
+            }
+            .imgicon1{
+                padding-left: 25px;
+                padding-top: .8vh;
+            }
+            .scroll-img{
+                width: 100%;
+                height: 95vh;
+              background-image: url("https://www.sunrisershyderabad.in/dist/img/home/social_hub_bg.jpg");
+                margin-top: 10vh;
+            }
+            .social{
+                font-size: 50px;
+                font-family: 'Faster One', cursive;
+                color:#0f0801;
+                width: 100%;
+                height: 20h;
+                
+                padding-top: 5vh;
+                text-align: center;
+            }
+            .scroll{
+                height: 70vh;
+                width: 90%;
+               
+                overflow-y:scroll;
+                
+                margin-left: 5%;
+            }
+            .social-c{
+                height: 6vh;
+                width: 100%;
+            
+                display: flex;
+                justify-content: flex-end;                
+            }
+            .social-c .pow{
+                margin-top: 2vh;
+                margin-right: 20px;
+                color:dimgrey;
+            }
+            .sp-icon{
+                margin-right: 30px;
+                margin-top: 1vh;
+
+
+            }
+            .s-nav{
+                width: 100%;
+                height: 9vh;
+            }
+            .s-nav span{
+                padding-left: 30%;
+                padding-top: 3vh;  
+                padding-right: 30px;      
+                color:dimgrey;  
+            }
+            .s-nav button{
+                width: 100px;
+                height: 4vh;
+            }
+            .twit{
+                height: 85vh;
+                width: 100%;
+                display: flex;
+             
+            
+            }
+            .twit .t1,.t2,.t3{
+                width: 32.5%;
+                height: 85vh;
+                background-color: white;
+            }
+            .twit .t2{
+                width: 32.5%;
+                height: 80vh;
+                background-color: white;
+                margin-left: 20px;
+
+            }
+            .sun{
+                height: 8vh;
+                display: flex;
+            }
+            .sun .left{
+                margin-top: 3vh;
+                padding-left: 10px;
+            }
+            .sun .right{
+                margin-top: 3vh;
+                margin-left: 180px;
+            }
+            .t1 .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .t1 .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .t1 .matter-ion i{
+                font-size: 30px;
+            }
+            
+            .t2 .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .t2 .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .t2 .matter-ion i{
+                font-size: 30px;
+            }
+            .twit .t3{
+                margin-left: 20px;
+                height: 80vh;
+            }
+            .t3 .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .t3 .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .t3 .matter-ion i{
+                font-size: 30px;
+            }
+            .twit-r2{
+                height: 85vh;
+                width: 100%;
+                display: flex;
+            }
+            .twit-r2 .row2-t1,.row2-t2,.row2-t3{
+                width: 32.5%;
+                height: 85vh;
+                background-color: white;
+            }
+            .twit-r2 .row2-t1{
+                margin-top: 3vh;
+                height: 90vh;
+               
+            }
+            .row2-t2 {
+                margin-top: -1vh;
+                margin-left: 20px;
+                height: 88vh;
+               
+            }
+            .row2-t1 .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .row2-t1 .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .row2-t1 .matter-ion i{
+                font-size: 30px;
+            }
+            
+           
+            .row2-t2  .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .row2-t2  .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .row2-t2 .matter-ion i{
+                font-size: 30px;
+            }
+            .row2-t3{
+                margin-top: -1vh;
+                margin-left: 20px;
+                height: 90vh;
+            }
+             
+            .row2-t3  .matter{
+                margin-top: 2vh;
+                padding-left: 10px;
+            }
+            .row2-t3  .matter-ion{
+                text-align:right;
+                margin-top: 2vh;
+                margin-right: 20px;
+            }
+            .row2-t3 .matter-ion i{
+                font-size: 30px;
+            }
+            .title-sponser-area{
+                width: 100%;
+                height: 40vh;
+                background-color: white ;
+                
+            }
+            .title-sponser-area .title-sponser{
+                
+                height: 5vh;
+                text-align:center;
+                padding-top: 9vh;
+                font-weight: bold;
+                font-size: 35px;
+                color: RGB(238, 116, 41) ;
+            }
+            .title-sponser-img {
+            
+                margin-left: 37%;
+                margin-top: 2vh;
+                
+            }
+            .principal-sponser{
+                text-align: center;
+                margin-top: 10VH;
+                font-weight: bold;
+                
+                font-size: 30PX;
+                color: RGB(238, 116, 41) ;
+            }
+            .principle-sponser-img{
+                display: flex;
+                justify-content: space-around;
+               
+                margin-top: 5vh;
+            }
+
+            .s2{
+                margin-top: 2vh;
+            }   
+            .s3{
+                margin-top: -3vh;
+               
+            }
+            .s1 .s4-img{
+                margin-left: -20px;
+            }
+            .other-sponser{
+                text-align: center;
+                margin-top: 3vh;
+                
+                font-weight: bold;
+                font-size: 30px;
+                color: RGB(238, 116, 41) ;
+            }
+            .ot-1{
+                display: flex;
+                
+                margin-top: 3VH;
+            }
+            .thup{
+                margin-left: 38%;
+            }
+            .simply{
+                margin-left: 30PX;
+            }
+            .simply img{
+                margin-left: -20PX;
+            }
+            .our-ptr{
+                text-align: center;
+              margin-top: 8vh;
+                
+                font-weight: bold;
+                font-size: 30px;
+                color: RGB(238, 116, 41) ;
+            }
+            .our-c{
+                display: flex;
+                margin-top: 2vh;
+                justify-content: space-around;
+            }
+            
+            .our-2 img{
+                padding-top: 4vh;
+            }
+            .our-c1{
+                display: flex;
+                margin-top: 2vh;
+                width: 90%;
+                justify-content: space-between;
+                margin-left: 5%;
+                
+                
+            }
+            
+            .our-2 img{
+                padding-top: 4vh;
+            }
+            .ourmc1{
+                width: 100%;
+                height: 20vh;
+                
+            }
+            .ourmc{
+                width: 100%;
+                height: 20vh;
+              
+            }
+            .bottom-c{
+                width: 100%;
+                height: 40vh;
+                background-color: #310003;
+                display: flex;
+                margin-top: 5vh;
+                background:linear-gradient(rgba(32, 1, 1, 0.596),rgba(34, 1, 1, 0.562)),url("https://www.tutorialchip.com/wp-content/uploads/2011/12/Fire-Texture-III.jpg");
+            }
+            .bottom-c .c1{
+               
+                width: 35%;
+               
+             
+
+            }
+            .bottom-c .c1 .sc{
+                margin-top: 4vh;
+                margin-left:10%;
+                height: 35vh;
+                width: 100%;
+            }
+        
+            .bottom-c .c2{
+                
+                width: 35%;
+                height: 40vh;
+                position: relative;
+               
+                            
+            }
+            .m1{
+                color: white;
+                margin-top: 5vh;
+                
+            }
+            .c2 input{
+                width: 70%;
+                height: 5vh;
+                margin-top: 2vh;
+             
+                background-color: #f5cf7d;
+                border: none;
+                
+            }
+            .bottom-c .c3{
+              
+               width: 30%;
+            
+                height: 40vh;
+                position: relative;
+              
+            }
+            .b-c{
+                width: 50%;
+                height: 3.5vh;
+                color: white;
+            }
+            .copy{
+                position: relative;
+                top: 4vh;
+                color: white;
+            }
+            .last{
+                margin-top: 5vh;
+                margin-left: 25%;
+                color: white;
+                display: flex;
+            }
+            .l-icn{
+                margin-left: 13%;
+                margin-top: 2vh;
+            }
+            .l-icn i{
+                font-size: 30px;
+                color: #f5cf7d;
+                margin-left: 5%;
+                
+
+            }
+            .b-c a{
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="nav">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="srhicon">
+                <img src="https://www.sunrisershyderabad.in/dist/img/srh-logo.gif" alt="" class="img-responsive">
+            </div>
+        </div>
+        <div class="banner">
+           
+          
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="x col-sm-4">
+                    <img src="https://www.sunrisershyderabad.in/dist/img/home/merchandise-new.png">
+                </div>
+                <div class="x col-sm-4">
+                    <img src="https://www.sunrisershyderabad.in/dist/img/home/accessories.png">
+                </div>
+                <div class="x col-sm-4"><img src="https://www.sunrisershyderabad.in/dist/img/home/fixtures.png" ></div>
+            </div>
+
+        </div>
+        <div class="chain-head">
+            <div class="chain-1">
+               <img src="https://www.sunrisershyderabad.in/dist/img/home/chain.png">
+            </div>
+            <div class="chain-2">
+                <img src="https://www.sunrisershyderabad.in/dist/img/home/chain.png">
+            </div>
+        </div>
+     
+        <div class="points-table">
+            <table  >
+                <tr class="p-head" >
+                    <th>Pos<div class="line"><hr></div></th>
+                    <th>Team<div class="line"></div><hr></th>
+                    <th>PLD<div class="line"></div><hr></th>
+                    <th>Won<div class="line"></div><hr></th>
+                    <th>Last<div class="line"></div><hr></th>
+                    <th>Tied<div class="line"></div><hr></th>
+                    <th>PTS<div class="line"></div><hr></th>
+                    <th>NRR<div class="line"></div><hr></th>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-62307ec4301d71.087543983(sw4lbn.png"width=50px></div><div class="gt">GT</div></td>
+                    <td>14</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>20</td>
+                    <td>+0.316</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f84a0ee0b06.55461162fha$74p0.png"width=40px></div><div class="RR">RR</div></td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>+0.298</td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="icon"><div class="imgicon1"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-62308132107776.65696040txe$98qp.png"width=50px></div><div class="lSG">LSG</div></td>
+                    <td>14</td>
+                    <td>9</td>
+                    <td>5</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>+0.251</td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f853cad5e83.97380255k3ir()o5.png"width=40px></div><div class="RCB">RCB</div></td>
+                    <td>14</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>16</td>
+                    <td>-0.253</td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f84f8338066.95126574$q0ldm7j.png"width=40px></div><div class="RCB">DC</div></td>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>+0.204</td>
+
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-6046a0e0abca58.45048114xhql34t1.png"width=40px></div><div class="RCB">PBKS</div></td>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>+0.146</td>
+
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f8557677b66.09603856r(6054xe.png"width=40px></div><div class="RCB">KKR</div></td>
+                    <td>14</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>12</td>
+                    <td>+0.146</td>
+
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f856ca4e661.09804863vat7z35f.png"width=40px></div><div class="RCB">SRH</div></td>
+                    <td>14</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>12</td>
+                    <td>-0.379</td>
+
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f84cb1f9f76.65609923ht5avgfd.png"width=40px></div><div class="RCB">CSK</div></td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>-0.203</td>
+
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="icon"><div class="imgicon"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5e5f84ba4c0a87.72114119gr9man3w.png"width=40px></div><div class="RCB">MI</div></td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>-0.506</td>
+
+                </tr>
+
+            </table>
+        </div>
+        <div class="scroll-img">
+            <div class="social"><span>social</span><br><span>Hub</span></div>
+            <div class="scroll">
+                <div class="social-c">
+                    <div class="pow">Powerd By</div>
+                    <div class="sp-icon">
+                        <img src="https://www.juicer.io/logo-with-text-gray.svg" alt="" height="30px">
+                    </div>
+                </div>
+                 <div class="s-nav">
+                        <span>Filter :</span>
+                        <button><i class="fa-solid fa-users"></i>   ALL</button>
+                        <button><i class="fa-brands fa-twitter"></i> twitter</button>
+                        <button><i class="fa-brands fa-instagram"></i> Instagram</button>
+                </div>
+                
+                <div class="twit">
+                    <div class="t1">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460980303/images.jpg?external_id=CjKfFJYPmiZ&s=c1c75bcdf3686324b4caa35c1640830ea398c8b6"width="100%" alt=""></div>
+                        <div class="matter">#JammuExpress makes a quick stop in Rajkot 🔥</div>
+                        <div class="matter">He helps ROI bundle out Saurashtra for 9️⃣8️⃣.</div>
+                        <div class="matter">#SAUvROI #OrangeArmy.</div>
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                        
+                    </div>
+                    <div class="t2">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460942833/images.jpg?external_id=CjIYDVFPIhx&s=59e0d5cf6c221f630093a0ca5c941e82a195b48a"width="100%" alt=""></div>
+                        <div class="matter">#OrangeArmy, what plans for the long weekend? 😉</div>
+                        <div class="matter">#FestiveWeek</div>
+                       
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                    <div class="t3">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460899941/images.jpg?external_id=CjFz6HDPyMX&s=1d5c313e9f0387647e55b81b2665668a88be7789"width="100%" alt=""></div>
+                        <div class="matter">The retro look suits you well, Glenn <i class="fa-sharp fa-solid fa-heart"></i>😉
+                        </div>
+                        <div class="matter">#OrangeArmy |📸: @blackcapsnz</div>
+                       
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                    </div>
+                </div>
+                <div class="twit-r2">
+                    <div class="row2-t1">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460899942/images.jpg?external_id=CjFDYy3PfTZ&s=b9801ed5679a55d2e2b575c73d54528b21b39ad0"width="100%" alt=""></div>
+                        <div class="matter">Spot the difference as Aiden Markram & Rahul Tripathi fist bump each other after a successful partnership </div>
+                        <div class="matter">How many can you find?</div>
+                        <div class="matter">#OrangeArmy</div>
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                        
+                    </div>
+                    <div class="row2-t2">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460770951/images.jpg?external_id=Ci8A1Rqv3Dl&s=eab0aee050484f6717391b6ee3313bdb4697754e"width="100%" alt=""></div>
+                        <div class="matter">King Kohli just loves batting in Mana Hyderabad </div>
+                        <div class="matter">His 5th 5️⃣0️⃣+ score in 9 games at the Rajiv Gandhi International Stadium </div>
+                        <div class="matter">#INDvAUS</div>
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                        
+                    </div>
+                    <div class="row2-t3">
+                        <div class="sun">
+                            <div class="left">SunRisers Hyderbad</div><div class="right"> 3mo</div>
+                        </div>
+                        <div><img src="https://www.juicer.io/api/posts/460770948/images.jpg?external_id=Ci-FbuGvMAw&s=df3c6498dd993c4be1862026c093ba473cc71e48"width="100%" alt=""></div>
+                        <div class="matter">#Riser Romario Shepherd guided @amznwarriors to a top-2 finish with 3/14 vs Barbados Royals last night!</div>
+                        <div class="matter">Wishing him the best of luck ahead of Qualifier 1 tomorrow</div>
+                        <div class="matter">#OrangeArmy #CPL22</div>
+                        <div class="matter-ion"><i class="fa-brands fa-instagram"></i></div>
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="title-sponser-area">
+            <div class="title-sponser">
+              
+              TITLE SPONSER
+            </div>
+            <div class="title-sponser-img">
+                <a href="https://www.bkt-tires.com/ww/en/" target="_blank">
+                <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-620f449d17d142.52926755502wx7ki.jpg" width="350px">
+            </div></a>
+        </div>
+        <div class="principal-sponser-area">
+            <div class="principal-sponser">PRINCIPAL SPONSOR</div>
+            <div class="principle-sponser-img">
+                
+                <div class="s1">
+                    Official Tire Partner
+                    <div class="s1-img">
+                      <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-621083066df4f3.33289368687ljf5x.jpg"width="150px">
+                    </div>
+                </div>
+                <div class="s1">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-621f69c97bc353.80098880c8q(n)a2.png" width="150px">
+                </div>
+                <div class="s1">
+                    Official  Telecom Partner
+                    <div class="s3-img">
+                        <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-60680b9d0ab8c3.43034860lr5()h4k.png" width="150px">
+                    </div>
+                </div>
+                <div class="s1">
+                    Official  Sponsor
+                    <div class="s4-img">
+                        <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5c83d3e271edf1.43451744ps$0b7(4.png">
+                    </div>
+                </div>
+                <div class="s2">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5f43a4f5b6d625.79573367haxq(igc.png"width=150PX>
+                </div>
+                <div class="s3">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-627cb161b01dd5.73170487powmdlre.png"width="150px">
+                </div>
+            </div>
+        </div>
+        <div class="other-sponser">
+            OTHER  SPONSOR
+        </div>
+        <div class="ot-1">
+            <div class="thup">
+                <div class="mtr">
+                    Official Beverage Partner
+                </div>
+                <div class="mtr-img">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-62206aea59c235.55613642zuf9w)p0.png" width="150px">
+                </div>
+            </div>
+            <div class="simply">
+                <div class="mtr">
+                    Simplify Partner
+                </div>
+                <div class="mtr-img">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-6221f47f009262.92649088h1edq46o.png" width="150px">
+                </div>
+            </div>
+        </div>
+        <div class="our-ptr">
+            OUR PARTNERS
+        </div>
+        <div class="ourmc1">
+        <div class="our-c">
+            <div class="our1">
+                Official Kit Partner
+                <div class="our-img">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-6221c85dc946e7.03748610mihnw25(.png"width="150px">
+                </div>
+            </div>
+            <div class="our-1">
+                Official Fan Merchandise <br/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5f48c690ef2588.83489579ikwyexgc.png"width="150px" alt=""></div>
+            </div>
+            <div class="our-1">
+                Official Cruch Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-62206b59b6dd02.34489084sdtfig3e.jpg"width="150px" alt=""></div>
+            </div>
+            <div class="our-1">
+                Official Crd partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-5f895d8850e853.48712587d0y7v54q.png"width="150px" alt=""></div>
+            </div> <div class="our-2">
+                ORS partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-623d7eb1b46205.367296197gtsl2$1.jpg"width="150px" alt=""></div>
+            </div>
+            <div class="our-2">
+               Celebration  partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-622834d7a1a186.24276362$0z2ycxt.png"width="150px" alt=""></div>
+             </div>
+           
+           
+        </div>
+        </div>
+        <div class="ourmc">
+        <div class="our-c1">
+            <div class="our1">
+                Official Radio Partner
+                <div class="our-img">
+                    <img src="https://www.sunrisershyderabad.in/uploads/image/SRH-62289341c43647.94606003r72a3(u5.jpg"width="150px">
+                </div>
+            </div>
+            <div class="our-2">
+                Official Stamina Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-622893bfafc499.43163785fdv(4lzh.jpg"width="150px" alt=""></div>
+            </div>
+            <div class="our-1">
+                Official Digital Banking <br/>Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-6247ee978bf5f0.96875678kt70pv1h.png"width="150px" alt=""></div>
+            </div>
+            <div class="our-2">
+                Official Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-626fa97127fc81.376190269fe104ka.jpg"width="150px" alt=""></div>
+            </div> <div class="our-1">
+                VR Gaming Partner
+                <div class="our-img"><img src="https://www.sunrisershyderabad.in/uploads/image/SRH-6253c365ccd7d3.6122030891)bs7u2.png"width="100px" alt=""></div>
+            </div>
+        </div>
+        </div>
+        <div class="bottom-c">
+            <div class="c1">
+                <div class="sc">
+                <p class="b-c"><a href=Home.html>HOME</a></p>
+                <p class="b-c"><a href=tickets.html>TICKETS</a></p>
+                <p class="b-c"><a href=#>OFFICIAL</a></p>
+                <p class="b-c"><a href=#>MERCHANDISE</a></p>
+                <p class="b-c"><a href=#>FAN</a></p>
+                <p class="b-c"><a href=#>MERCHANDISE</a></p>
+                <p class="b-c"><a href=pl.html>THE RISERS</a></p>
+                <p class="b-c"><a href=matches.html>MATCHES</a></p>
+                <div class="copy">
+                    © Copyright 2023, Sun TV Network Ltd. All rights reserved.
+                </div>
+                </div>  
+
+            </div>
+            <div class="c2">
+                <div class="m1">SUBSCRIBE TO OUR NEWSLETTER</div>
+                <div class="email">
+                    <input type="email" placeholder="Email Address">
+                </div>
+            </div>
+            <div class="c3">
+                <div class="last">FOLLOW US ON</div>
+                <div class="l-icn">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
